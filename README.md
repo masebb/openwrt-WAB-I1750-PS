@@ -1,4 +1,4 @@
-### OpenWrtをELECOM WAB-I1750-PSで動かす
+# OpenWrtをELECOM WAB-I1750-PSで動かす
 
 https://github.com/openwrt/openwrt/pull/3661 にてzpcさんにより、OpenWrt公式へのELECOM WAB-I1750-PS向けのFWがビルドできるPRが出ていますが、上流へのPRは中止したそうです( https://zpc.st/hardware/elecom/wab-i1750-ps/ にzpcさんが解析した内容が載っています )
 
@@ -9,13 +9,13 @@ https://github.com/openwrt/openwrt/pull/3661 にてzpcさんにより、OpenWrt�
 **OpenWrtをビルドしたことがない人はこの一生に二度とないOpenWrtのビルドを体験するといいかもしれません**
 
 
-#### お約束
+## お約束
 
 - 以下の方法を参考にビルドしたものを用いて / 配布するビルド済みのバイナリを用いて OpenWrt化して何らかの損害が出た場合でも、責任は一切取れません。**自己責任でお願いします**
 - **日本国内の場合、法律の関係上OpenWrtで無線LANを飛ばす行為は非推奨です。もし吹く場合でも、調べてから自己責任で飛ばしてください**
 - **私はOpenWrtについて全然詳しくありません。**もし、誤っている部分等ありましたらPRくれるとうれしいです
 
-#### 前提
+## 前提
 Linux環境が必要です(WSLは公式にサポートされていません : [詳細](https://openwrt.org/docs/guide-developer/toolchain/wsl))
 
 [[OpenWrt Wiki] Build system setup](https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem) に従って各ディストリビューションでビルド用パッケージのインストールをします
@@ -29,7 +29,7 @@ gcc-multilib g++-multilib gettext git libncurses-dev libssl-dev \
 python3-distutils rsync unzip zlib1g-dev file wget
 ```
 
-#### 作業
+## 作業
 
 [[OpenWrt Wiki] Quick image building guide](https://openwrt.org/docs/guide-developer/toolchain/beginners-build-guide) を参考にしつつビルドします
 
@@ -147,6 +147,7 @@ make
 
 ```
 
-### 戻す方法
+## 戻す方法
 TODO
+
 Resetボタン押してみたら文鎮化しました
