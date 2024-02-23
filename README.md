@@ -131,7 +131,7 @@ vim target/linux/ath79/generic/base-files/etc/hotplug.d/firmware/11-ath10k-calda
 ./scripts/feeds install -a
 
 # makeの前準備
-make manuconfig
+make menuconfig
 # 各種チェックが終わった後TUIが開きます
 # そこで `Target System` を `Atheros ATH79` に `Target Profile` を `ELECOM WAB-I1750-PS` にして、WAB-I1750-PS用のFWが出てくるようにします
 # OpenWrtを管理するWeb-GUIアプリケーションのLuCIを入れるので、 `LuCI` → `1.Collections` → `luci` を `*` にします(`M`だと、インストール時にインターネットから拾う設定になってしまいます)
