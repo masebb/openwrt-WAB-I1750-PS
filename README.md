@@ -6,7 +6,7 @@
 
 [zpcさん・大破さんによって作成されたWAB-I1750-PS上でOpenWrtが動くようになるパッチ](https://github.com/openwrt/openwrt/pull/14706)がOpenWrt公式へマージされました。
 
-まだ正式版としてはリリースされていないため、openWrt公式からはLuCIが入っていないsnapshotビルドの公開しか行われておりません。LuCI入りのビルド済みバイナリをReleasesに置いておくので**下のお約束を読んだ上で**ダウンロードしてご自由にご利用ください
+まだ正式版としてはリリースされていないため、openWrt公式からはLuCIが入っていないsnapshotビルドの公開しか行われておりません。[`336a531`](https://github.com/openwrt/openwrt/commit/336a531c15e7fa5f8a42a7b9f2662c249aafce89)時点でのLuCI入りのビルド済みバイナリをReleasesに置いておくので**下のお約束を読んだ上で**ダウンロードしてご自由にご利用ください。Stableのビルドではないので、何らかのバグ等が潜んでいる可能性があります。
 
 
 ## お約束
@@ -29,7 +29,7 @@
 > 5. Flash to "firmware" partition by mtd command
 > 6. Reboot
 
-ELECOMから提供されたFWはそのままは適用できず、細工をする必要があります。2.と3.を勝手にやるプログラムを作成したので、それをReleasesから拾ってきてやります
+ELECOMから提供されたFWはそのままでは適用できず、細工をする必要があります。2.と3.を勝手にやるプログラムを作成したので、それをReleasesから拾ってきてやります
 
 TODO
 
@@ -38,9 +38,9 @@ TODO
 
 ここではUbuntu22.04を前提としています(WSLは公式にサポートされていません : [詳細](https://openwrt.org/docs/guide-developer/toolchain/wsl))
 
-#### GitHubから最新Stableを拾ってくる
+#### GitHubからコードを拾ってくる
 ```
-git clone -b v23.05.2 https://github.com/openwrt/openwrt.git
+git clone https://github.com/openwrt/openwrt.git
 cd openwrt/
 ```
 
