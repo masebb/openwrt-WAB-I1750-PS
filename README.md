@@ -1,7 +1,7 @@
 # OpenWrtをELECOM WAB-I1750-PSで動かす
-~~https://github.com/openwrt/openwrt/pull/3661 にてzpcさんにより、OpenWrt公式へのELECOM WAB-I1750-PS向けのFWがビルドできるPRが出ていますが、上流へのPRは中止したそうです( https://zpc.st/hardware/elecom/wab-i1750-ps/ にzpcさんが解析した内容が載っています )
+~~https://github.com/openwrt/openwrt/pull/3661 にてzpcさんにより、OpenWrt公式へのELECOM WAB-I1750-PS向けのFWがビルドできるPRが出ていますが、上流へのPRは中止したそうです( https://zpc.st/hardware/elecom/wab-i1750-ps/ にzpcさんが解析した内容が載っています )~~
 
-どうやらこれで動くようなので、このコードを最新版にパッチしてビルドします~~
+~~どうやらこれで動くようなので、このコードを最新版にパッチしてビルドします~~
 
 
 [zpcさん・大破さんによって作成されたWAB-I1750-PS上でOpenWrtが動くようになるパッチ](https://github.com/openwrt/openwrt/pull/14706)がOpenWrt公式へマージされました。
