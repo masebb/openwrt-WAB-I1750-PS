@@ -36,6 +36,8 @@ TODO
 ### ビルド方法
 公式に入ったので、下記の内容はほとんど[[OpenWrt Wiki] Quick image building guide](https://openwrt.org/docs/guide-developer/toolchain/beginners-build-guide) と同じものです
 
+ここでは楽なので最新verでの手法を紹介しますが、もしopenwrtの安定板(23.05 : 2024年3月4日現在)でビルドをしたい場合 [README.old.md](https://github.com/masebb/openwrt-WAB-I1750-PS/blob/main/README.old.md) を参考にしつつ、公式に投げられたPRのパッチ `https://patch-diff.githubusercontent.com/raw/openwrt/openwrt/pull/14706.patch` を当ててみてください
+
 ここではUbuntu22.04を前提としています(WSLは公式にサポートされていません : [詳細](https://openwrt.org/docs/guide-developer/toolchain/wsl))
 
 #### GitHubからコードを拾ってくる
