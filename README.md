@@ -18,6 +18,8 @@
 
 ### 元のFWに戻す方法
 
+**(これらは理解して行わないと法的リスク/文鎮リスクが非常に高くなる行為です｡ 結構適当に書いているのでこちらの情報を盲目的に信じるのではなく, ご自身で色々お調べになってからやることを強くおすすめします)**
+
 大破さんにより、OpenWrtを入れたWAB-I1750-PSを戻す方法が[コミットメッセージ](https://github.com/openwrt/openwrt/commit/b18edb1bfa34420fde1404d9d1e619c889557154)に記されています
 
 > Revert to OEM firmware:
@@ -29,9 +31,14 @@
 > 5. Flash to "firmware" partition by mtd command
 > 6. Reboot
 
-ELECOMから提供されたFWはそのままでは適用できず、細工をする必要があります。2.と3.を勝手にやるプログラムを作成したので、それをReleasesから拾ってきてやります
+ELECOMから提供されたFWはそのままでは適用できず、細工をする必要があります。ツールもあるっぽいが, 使用方法がよく分からなかったので2.と3.を勝手にやるシングルバイナリプログラムを作成しました、それをReleasesから拾ってきて以下のようにするとresult.binが生えます
 
-TODO
+```bash
+$ ./deencrypt-linux-amd64 ${FWのパス} 
+```
+それを以下を参考にいい感じにfirmwareパーティションに書き込み, rebootすると戻っているかと思われます
+
+[OpenWrtからメーカーファームへのrevert – 鉄PCブログ](https://tetsupc.wordpress.com/openwrt_devinfo/openwrt_stock/)
 
 ### ビルド方法
 公式に入ったので、下記の内容はほとんど[[OpenWrt Wiki] Quick image building guide](https://openwrt.org/docs/guide-developer/toolchain/beginners-build-guide) と同じものです
